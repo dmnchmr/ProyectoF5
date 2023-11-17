@@ -1,0 +1,732 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* ----------------- */
+/* -------nav-------- */
+/* ----------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-block: 1.5em;
+    padding-inline: 2em;
+    background-color:#F7FAFD ;
+    box-shadow: 1px 1px 10px #c5c3c3;
+    z-index: 1000;
+}
+
+.logo {
+    width: 9%;
+}
+
+nav {
+    float: right;
+    word-spacing: 3em;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+li:nth-of-type(5) a{
+    color: #FF556E;
+    border:2px solid #FF556E;
+    border-radius: 25px;
+    padding: 1px 1.5em;
+}
+li:nth-of-type(5) a:hover {
+    color: white;
+    border:2px solid #FF556E;
+    background-color: #FF556E ;
+}
+
+li a:hover {
+    color: #FF556E;
+}
+li:nth-of-type(4) {
+    word-spacing: 0em;
+}
+
+/* --------------------------------------
+------------------submenu--------------------
+-------------------------------------- */
+
+li ul {
+    display: none;
+    background-color: #F7FAFD;
+    position: absolute;
+    box-shadow: 1px 1px 10px #c5c3c3;
+    padding: 1em;
+    word-spacing: normal;
+    line-height: 1.8;
+    width: 12.5em;
+}
+
+li ul a {
+    border-bottom: 1px solid #dddcdc;
+}
+
+
+li:nth-of-type(4):hover ul {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.down {
+    text-align: center;
+    justify-self: center;
+}
+
+/* --------------------- */
+/* ----- sect1---------- */
+/* --------------------- */
+
+#sect1 {
+    position: relative;
+    min-height: 70vh;
+    padding-top: 10em;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3em;
+    flex-direction: column;
+    background-color: #F7FAFD;
+}
+
+#sect1 h1 {
+    padding-top: 3em;
+    text-align: center;
+    font-size: 75px;
+    color: #333333;
+    z-index: 100;
+}
+
+#sect1 p {
+    font-size: 20px;
+	width: 50%;
+	text-align: center;	
+    color: #777777;
+    z-index: 100;
+}
+
+/* ---------------- */
+/* ----buttons---- */
+/* -------------- */
+
+#sect1 button {
+    color: white;
+    border:2px solid #FF556E;
+    background-color: #FF556E ;
+    border-radius: 25px;
+    padding: 0.5em 2em ;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+}
+
+#buttonsdownload {
+    z-index: 100;
+}
+
+#sect1 button:hover {
+    color: #FF556E;
+    border:2px solid #FF556E;
+    background-color: white;
+}
+#sect1 button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* #sect2 {
+    position: relative;
+    display: flex;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6em;
+    background-color: #F7FAFD;
+}
+ */
+.hearder-iphone {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    width: 30%;
+    align-self: center;
+    z-index: 100;
+}
+
+.greendiamond {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 20px;
+    z-index: 10;
+}
+
+.yellowcircle {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 30px;
+    z-index: 10;
+}
+
+.bluecircle {
+    position: absolute;
+    top: 56%;
+    left: 15%;
+    width: 70px;
+    z-index: 10;
+}
+
+.whitecircle1 {
+    position: absolute;
+    top: 30%;
+    right: -15%;
+    width: 500px;
+    z-index: 10;
+}
+
+.whitecircle2 {
+    position: absolute;
+    top: 55%;
+    left: -5%;
+    width: 500px;
+    z-index: 10;
+}
+/* ---------------------------------- */
+/* ----- sect3 iconos--------------- */
+/* -------------------------------- */
+
+#sect3 {
+    position: relative;
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7FAFD;
+
+}
+
+#allicons {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+
+}
+
+#sect3 i {
+    font-size: 50px;
+}
+
+#sect3 div p {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+.iconosespacio{
+    padding: 2em;
+}
+
+/* colors bcc */
+
+.icon1{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBE7FA;
+}
+.icon2{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #DAF4EF;
+}
+.icon3{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8E5EA;
+}
+.icon4{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F1DE;
+}
+.icon5{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #E1F2FA;
+}
+/* colors icons */
+
+.fa-users{
+    color: #AA7EEC;
+}
+.fa-code{
+    color: #19CA94;
+}
+.fa-gear{
+    color: #FF556E;
+}
+.fa-comments{
+    color: #FFB30F;
+}
+.fa-rocket{
+    color: #4FB9E8;
+}
+
+/* ---------------------------------- */
+/* ----------- sect4 --------------- */
+/* -------------------------------- */
+
+#sect4 {
+    padding-top: 6em;
+    padding: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7FAFD;
+}
+
+.allsect4{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sect4 img {
+    width: 80%;
+}
+
+#sect4 h2 {
+    font-size: 40px;
+    color: #333333;
+}
+
+#sect4 .texto4{
+    width: 50%;
+}
+
+#sect4 p {
+    padding: 1em;
+    color: #777777;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* --------------- */
+/* ----buttons---- */
+/* ------------- */
+
+#sect4 button {
+    color: white;
+    border:2px solid #FF556E;
+    background-color: #FF556E ;
+    border-radius: 25px;
+    padding: 0.5em 2em ;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+}
+
+#sect4 button:hover {
+    color: #FF556E;
+    border:2px solid #FF556E;
+    background-color: white;
+}
+#sect4 button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* --------------------- */
+/* ---------sect5------- */
+/* --------------------- */
+
+#sect5 {
+    padding: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8EFF6;
+    flex-wrap: wrap;
+}
+.allsect5{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alltext5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#sect5 img {
+    width: 120%;
+}
+
+.texto5 p {
+    padding: 1em;
+    color: #777777;
+    font-size: 20px;
+    line-height: 1.8;
+}
+#sect5 .texto5{
+    width: 90%;
+}
+
+#sect5 span {
+    color: #44D1A7;
+}
+
+
+/* ------------------- */
+/* ------------------- */
+/* ------------------- */
+
+.botones5 {
+    align-self: flex-start;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(2, 55%);
+    row-gap: 20%;
+    column-gap: 5%;
+    padding-left: 10%;
+    text-align: center;	
+    padding-bottom: 4em;
+}
+
+.botones5 button:nth-child(1) {
+    background-color: #9A67E7;
+    color: #FEFEFE;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+    border:2px solid #9A67E7;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+
+}
+.botones5 button:nth-child(2) {
+    background-color: #F7FAFD;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+    border:2px solid #F7FAFD;
+    text-align: center;	
+    width: 150px;
+    height: 40px;
+}
+.botones5 button:nth-child(3) {
+    background-color: #F7FAFD;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+    border:2px solid #F7FAFD;
+    text-align: center;	
+    width: 150px;
+    height: 40px;
+}
+
+/* hovers */
+
+.botones5 button:nth-child(1):hover {
+    background-color: #F7FAFD;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+    border:2px solid #F7FAFD;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+
+}
+.botones5 button:nth-child(2):hover {
+    background-color: #9A67E7;
+    color: #FEFEFE;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+    border:2px solid #9A67E7;
+    text-align: center;	
+    width: 150px;
+    height: 40px;
+}
+.botones5 button:nth-child(3):hover {
+    background-color: #9A67E7;
+    color: #FEFEFE;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+    border:2px solid #9A67E7;
+    text-align: center;	
+    width: 150px;
+    height: 40px;
+}
+
+/* ---------------- */
+/* ----buttons---- */
+/* -------------- */
+
+#sect5 .terms {
+    color: white;
+    border:2px solid #FF556E;
+    background-color: #FF556E ;
+    border-radius: 25px;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+}
+
+#sect5 .terms:hover {
+    color: #FF556E;
+    border:2px solid #FF556E;
+    background-color: white;
+}
+
+#sect5 .privacy {
+    color: #363636;
+    border:2px solid #363636;
+    background-color: #E8EFF6;
+    border-radius: 25px;
+    padding: 0.5em 2em ;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;	
+}
+
+#sect5 .privacy:hover {
+    color: white;
+    border:2px solid white;
+    background-color: #363636;
+}
+#sect5 button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* --------------------- */
+/* -------sect6--------- */
+/* --------------------- */
+
+
+#sect6 {
+    min-height: 80vh;
+    background-color: #F7FAFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+#sect6 h2 {
+    padding-top: 3em;
+    padding-bottom: 2em;
+    align-self: center;
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+}
+
+.estructura6 {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.textos6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 5%;
+    padding: 2em;
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+
+.textos6 article p:first-child {
+    color: #878787;
+}
+.textos6 article p:nth-child(2) {
+    color: #878787;
+}
+.customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 5%;
+    background-color: #FFFFFF;
+}
+
+.customer img {
+    padding: 2em;
+}
+
+
+.estructura6 .fa-star {
+    color: #FFB30F;
+}
+
+/* ---------------- */
+/* -----sect7 iconos review------ */
+/* ---------------- */
+#sect7 {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8EFF6;
+    padding-inline: 2em;
+}
+
+#iconsreviews {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5%;
+
+}
+
+.gruporeview{
+    padding-inline: 2em;
+    text-align: center;
+}
+
+#sect7 i {
+    font-size: 60px;
+}    
+
+#sect7 h3 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333333;
+}    
+
+#sect7 div p {
+    color: #7B7C7C;
+
+}    
+
+
+
+/* ------------------ */
+/* -----footer------ */
+/* ---------------- */
+
+footer {
+    background-color: #F7FAFD;
+    color: #999999;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.8;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.iconsfooter {
+    font-size: 25px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+
+}
+
+footer p{
+    cursor: pointer;
+}
+footer p:hover{
+    text-decoration: underline;
+}
+
+.bccfooter {
+    display: flex;
+    width: 60px;
+    height: 50px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #999999;
+    cursor: pointer;
+}
